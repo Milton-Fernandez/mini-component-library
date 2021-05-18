@@ -13,7 +13,23 @@ const IconInput = ({
   size,
   placeholder,
 }) => {
-  return 'TODO';
+  return (
+    <>
+    
+      <Wrapper>
+        {label}...
+      </Wrapper>
+    </>
+  );
 };
 
+
+const Wrapper = styled.div`
+  display: block;
+  color:${COLORS.gray700};
+  width: 250px;
+  border-radius: 25px;
+  border-bottom: 3px solid ${COLORS.black};
+
+`;
 export default IconInput;
